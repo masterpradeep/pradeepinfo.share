@@ -18,7 +18,7 @@
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 					</p>
 					<p>
-						Hadoop(MapReduce, Pig, Hive, Sqoop, Oozie) <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+						Hadoop <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -45,6 +45,7 @@
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+						
 					</p>
 					
 					<p>

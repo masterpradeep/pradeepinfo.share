@@ -7,9 +7,7 @@
         
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
             <div class="topic">About me</div>
-            Passionate, responsible and proactive engineer, with get-it-done, on-time spirit,
-            and more than 0.8 yrs of experience in designing, implementing and deploying 
-            web applications.
+            7 Month of work experience in Big Data, Hadoop, Spring Frmaework, Web Services(REST), SQL Server, Oracle, SSIS, Informatica, J2SE, J2EE, Excel, VBA, Multithreading, OOPS Concepts, Machine Learning and good knowledge on cloud computing using Amazon web service(AWS).
         </div>
 
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">

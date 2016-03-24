@@ -2,6 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <head>
     <title>PRADEEP TRIPATHI-PROFILE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
     <meta name="Description" CONTENT="PRADEEP TRIPATHI's online profile. Directly download the resume or forward it as mail">
     <meta name="keywords" content="online cv,online profile, online resume, resume, cv, pradeep tripathi, pradeep's profile, software developer, web developer, curriculum vitae, online curriculum vitae, software engineer, it professional">
 
