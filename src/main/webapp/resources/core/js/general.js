@@ -1,5 +1,5 @@
 //var actualurl = "http://localhost/gourabpaul";
-var actualurl = "http://www.gourabpaul.info";
+var actualurl = "http://www.pradeepinfo.sharenodes.com";
 $(document).ready(function () {
     $('#mynavbar').hide();
     $('ul#topnavbar li a').hide();
@@ -85,6 +85,7 @@ function download_count(type) {
     $.get(actualurl + "/downloads/" + type);
 }
 
+
 function contact() {
     var name = document.getElementById("contactName").value;
     var email = document.getElementById("contactEmail").value;
@@ -94,7 +95,7 @@ function contact() {
 
     if (name != "" && email != "" && phone != "" && subject != "" && comment != "") {
 
-        $.get(actualurl + "/contact/contactme",
+        $.get("contact/contactme",
                 {
                     name: name,
                     email: email,

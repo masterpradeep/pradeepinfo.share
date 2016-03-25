@@ -2,6 +2,7 @@ package com.gourabpaul.web.model;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.Properties;
 
 import javax.activation.DataHandler;
@@ -24,7 +25,7 @@ public class MailGun {
 		String to = emailid;
 
 	      // Sender's email ID needs to be mentioned
-	      String from = "resume@gourabpaul.info";
+	      String from = "resume@pradeepinfo.sharenodes.com";
 
 	      // Assuming you are sending email from localhost
 	      String host = "localhost";
@@ -44,20 +45,20 @@ public class MailGun {
 	         MimeMessage message = new MimeMessage(session);
 
 	         // Set From: header field of the header.
-	         message.setFrom(new InternetAddress(from));
+	         message.setFrom(new InternetAddress(from,"Pradeep Tripathi"));
 
 	         // Set To: header field of the header.
 	         message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-	         message.setSubject("resume_GourabPaul_3yrs_Java_Web_developer");
+	         message.setSubject("Pradeep Tripathi Resume");
 	       //3) create MimeBodyPart object and set your message text     
 	         BodyPart messageBodyPart1 = new MimeBodyPart();  
-	         messageBodyPart1.setText("This is message body");  
+	         messageBodyPart1.setText("Please find the attachment for resume");  
 	           
 
 	       //4) create new MimeBodyPart object and set DataHandler object to this object      
 	         MimeBodyPart messageBodyPart2 = new MimeBodyPart();  
 	       
-	         String filename = "/tmp/resume/GourabPaul_3yrs_Java_Web_developer."+radiovalue;//change accordingly  
+	         String filename = "/tmp/resume/resume_pradeep."+radiovalue;//change accordingly  
 	         try {
 				new FileInputStream(filename).close();
 			} catch (IOException e) {
@@ -66,7 +67,7 @@ public class MailGun {
 			}
 	         DataSource source = new FileDataSource(filename);  
 	         messageBodyPart2.setDataHandler(new DataHandler(source));  
-	         messageBodyPart2.setFileName("GourabPaul_3yrs_Java_Web_developer."+radiovalue);  
+	         messageBodyPart2.setFileName("pradeep_resume."+radiovalue);  
 	          
 	          
 	         //5) create Multipart object and add MimeBodyPart objects to this object      
@@ -77,14 +78,17 @@ public class MailGun {
 	         //6) set the multiplart object to the message object  
 	         message.setContent(multipart );  
 	         // Now set the actual message
-	         message.setText("This is actual message");
 
 	         // Send message
 	         Transport.send(message);
 	         System.out.println("Sent message successfully....");
-	      }catch (MessagingException mex) {
+	      }catch (MessagingException | UnsupportedEncodingException mex) {
 	         mex.printStackTrace();
 	      }
+	}
+	public static void main(String args[]){
+		MailGun mg = new MailGun();
+		mg.sendMail("pk.tripathi700@gmail.com", "pdf");
 	}
 
 }
