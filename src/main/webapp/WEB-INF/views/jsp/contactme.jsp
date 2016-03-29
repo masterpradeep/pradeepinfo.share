@@ -21,7 +21,7 @@
                 <p><a href="https://www.google.com.au/maps/@19.07,72.88,12z"  target="_blank">
                         <span class="glyphicon glyphicon-map-marker"> </span> Mumbai, India</a>
                 <p><span class="glyphicon glyphicon-earphone"> </span> +91 9594681503
-                <p><a href="mailto:pk.tripathi700@gmail.com"><span class="glyphicon glyphicon-envelope"> </span> pk.tripathi@gmail.com</a>
+                <p><a href="mailto:pk.tripathi700@gmail.com"><span class="glyphicon glyphicon-envelope"> </span> pk.tripathi700@gmail.com</a>
                 <p><a href="mailto:pradeep3393@yahoo.in"><span class="glyphicon glyphicon-envelope"> </span> pradeep3393@yahoo.in</a>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

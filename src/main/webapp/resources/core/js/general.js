@@ -81,9 +81,6 @@ function backtotop() {
     });
 }
 
-function download_count(type) {
-    $.get(actualurl + "/downloads/" + type);
-}
 
 
 function contact() {
